@@ -30,7 +30,7 @@ from pythonosc.udp_client import SimpleUDPClient
 OSC_IP = "127.0.0.1"     # TouchDesigner가 같은 컴퓨터면 그대로
 OSC_PORT = 7000          # TD의 OSC In CHOP 포트와 맞출 것
 CAM_INDEX = 0            # 웹캠이 여러 개면 1, 2로 바꿔보기
-WAVE_WINDOW_SEC = 1.0    # 손 흔들기 판정: 최근 1초간의 손목 움직임 관찰
+WAVE_WINDOW_SEC = 0.7    # 손 흔들기 판정: 최근 0.5초간의 손목 움직임 관찰
 WAVE_MIN_SWINGS = 3      # 1초 안에 좌우 방향 전환이 3회 이상이면 '흔들기'
 # ─────────────────────────────────────────────────────
 
